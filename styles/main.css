@@ -1,4 +1,14 @@
-html {
+@font-face {
+  font-family: "Poppins";
+  src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins Bold";
+  src: url(../assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+html,
+button,
+input {
   font-family: "Poppins";
 }
 
