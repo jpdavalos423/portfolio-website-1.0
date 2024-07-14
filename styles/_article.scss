@@ -32,7 +32,7 @@
 
 .education-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   text-align: center;
 }
 
@@ -41,28 +41,39 @@
   height: 300px;
   border-radius: 19px;
   background: $white;
-  margin: 0 2.5rem;
+  margin: 0 2.375rem;
 }
 
 .education-description {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 3.5rem;
-}
-
-.education-type {
-  background-color: forestgreen;
+  justify-content: space-evenly;
 }
 
 .education-year {
+  position: absolute;
+  left: 0%;
+  top: -40%;
   font-family: "Poppins Bold";
 }
 
 .education-card {
+  position: relative;
   background-color: hsla(259, 27%, 27%, 0.2);
   padding: 1rem 3rem;
   border-radius: 1rem;
+  margin-left: 1rem;
+}
+
+.education-logo {
+  background-color: $white;
+  width: 60px;
+  height: 60px;
+  border-radius: 36rem;
+  position: absolute;
+
+  top: 10%;
+  left: -31%;
 }
 
 .skills {
