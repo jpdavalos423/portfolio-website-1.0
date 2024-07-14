@@ -14,6 +14,30 @@ input {
 }
 
 body {
-  background-color: $dusk-purple;
+  background-color: $dark-purple;
   color: $white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins Bold";
+}
+
+h1 {
+  font-size: $mobile-h1;
+  line-height: normal;
+}
+h2 {
+  font-size: $mobile-h2;
+  text-transform: lowercase;
+}
+h3 {
+  font-size: $mobile-h3;
+  text-transform: lowercase;
+}
+h4 {
+  font-size: $mobile-h4;
+  text-transform: lowercase;
 }

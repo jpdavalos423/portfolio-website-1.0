@@ -13,6 +13,71 @@ input {
 }
 
 body {
-  background-color: #130d23;
+  background-color: hsl(256, 46%, 9%);
   color: hsl(0, 0%, 98%);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins Bold";
+}
+
+h1 {
+  font-size: 52px;
+  line-height: normal;
+}
+
+h2 {
+  font-size: 30px;
+  text-transform: lowercase;
+}
+
+h3 {
+  font-size: 20px;
+  text-transform: lowercase;
+}
+
+h4 {
+  font-size: 16px;
+  text-transform: lowercase;
+}
+
+.content-section {
+  margin: 12rem 0;
+}
+
+.hero {
+  background-color: seagreen;
+}
+.hero .subheading {
+  font-size: 14px;
+}
+.hero .subheading span {
+  font-family: "Poppins Bold";
+  text-decoration: underline;
+}
+
+.about {
+  background-color: orangered;
+}
+.about p {
+  font-size: 12px;
+}
+
+.education {
+  background-color: darkslateblue;
+}
+
+.skills {
+  background-color: sienna;
+}
+
+.projects {
+  background-color: salmon;
+}
+
+.contact {
+  background-color: mediumblue;
 }/*# sourceMappingURL=main.css.map */

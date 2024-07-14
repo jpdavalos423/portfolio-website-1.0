@@ -1,2 +1,38 @@
+.content-section {
+  margin: 12rem 0;
+}
+
 .hero {
+  background-color: seagreen;
+  .subheading {
+    font-size: $mobile-subheading;
+
+    span {
+      font-family: "Poppins Bold";
+      text-decoration: underline;
+    }
+  }
+}
+
+.about {
+  background-color: orangered;
+  p {
+    font-size: $mobile-body-m;
+  }
+}
+
+.education {
+  background-color: darkslateblue;
+}
+
+.skills {
+  background-color: sienna;
+}
+
+.projects {
+  background-color: salmon;
+}
+
+.contact {
+  background-color: mediumblue;
 }
