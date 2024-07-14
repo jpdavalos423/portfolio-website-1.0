@@ -15,7 +15,7 @@ input {
 body {
   background-color: hsl(256, 46%, 9%);
   color: hsl(0, 0%, 98%);
-  padding: 4rem;
+  padding: 3rem;
 }
 
 h1,
@@ -110,7 +110,7 @@ p {
 .education-card {
   position: relative;
   background-color: hsla(259, 27%, 27%, 0.2);
-  padding: 1rem 3rem;
+  padding: 1rem 2.5rem;
   border-radius: 1rem;
   margin-left: 1rem;
 }
@@ -122,11 +122,78 @@ p {
   border-radius: 36rem;
   position: absolute;
   top: 10%;
-  left: -31%;
+  left: -32.25%;
 }
 
 .skills {
   background-color: sienna;
+  text-align: center;
+}
+.skills .marquee-wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin-inline: auto;
+  position: relative;
+  height: 100px;
+  margin-top: 5rem;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0));
+          mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0));
+}
+@keyframes scrollLeft {
+  to {
+    left: -125px;
+  }
+}
+@keyframes scrollRight {
+  to {
+    right: -125px;
+  }
+}
+.skills .item-start-right {
+  width: 125px;
+  height: 100px;
+  background: rgba(63, 51, 89, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  position: absolute;
+  left: max(625px, 100%);
+  animation-name: scrollLeft;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.skills .item-start-left {
+  width: 125px;
+  height: 100px;
+  background: rgba(63, 51, 89, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  position: absolute;
+  right: max(625px, 100%);
+  animation-name: scrollRight;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.skills .item1 {
+  animation-delay: -16s;
+}
+.skills .item2 {
+  animation-delay: -12s;
+}
+.skills .item3 {
+  animation-delay: -8s;
+}
+.skills .item4 {
+  animation-delay: -4s;
+}
+.skills .item5 {
+  animation-delay: 0s;
 }
 
 .projects {
