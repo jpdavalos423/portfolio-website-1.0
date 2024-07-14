@@ -39,5 +39,12 @@ h3 {
 }
 h4 {
   font-size: $mobile-h4;
-  text-transform: lowercase;
+}
+
+p {
+  line-height: 150%;
+}
+
+.subheading {
+  font-size: $mobile-subheading;
 }

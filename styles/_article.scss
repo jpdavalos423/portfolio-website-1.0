@@ -5,8 +5,6 @@
 .hero {
   background-color: seagreen;
   .subheading {
-    font-size: $mobile-subheading;
-
     span {
       font-family: "Poppins Bold";
       text-decoration: underline;
@@ -23,13 +21,48 @@
   background-color: orangered;
   p {
     max-width: 30rem;
-    line-height: 150%;
+    // line-height: 150%;
     font-size: $mobile-body-m;
   }
 }
 
 .education {
-  background-color: darkslateblue;
+  background-color: goldenrod;
+}
+
+.education-content {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.education-timeline {
+  width: 12px;
+  height: 300px;
+  border-radius: 19px;
+  background: $white;
+  margin: 0 2.5rem;
+}
+
+.education-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.5rem;
+}
+
+.education-type {
+  background-color: forestgreen;
+}
+
+.education-year {
+  font-family: "Poppins Bold";
+}
+
+.education-card {
+  background-color: hsla(259, 27%, 27%, 0.2);
+  padding: 1rem 3rem;
+  border-radius: 1rem;
 }
 
 .skills {

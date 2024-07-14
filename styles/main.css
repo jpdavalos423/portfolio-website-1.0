@@ -41,7 +41,14 @@ h3 {
 
 h4 {
   font-size: 16px;
-  text-transform: lowercase;
+}
+
+p {
+  line-height: 150%;
+}
+
+.subheading {
+  font-size: 14px;
 }
 
 .content-section {
@@ -50,9 +57,6 @@ h4 {
 
 .hero {
   background-color: seagreen;
-}
-.hero .subheading {
-  font-size: 14px;
 }
 .hero .subheading span {
   font-family: "Poppins Bold";
@@ -68,12 +72,46 @@ h4 {
 }
 .about p {
   max-width: 30rem;
-  line-height: 150%;
   font-size: 12px;
 }
 
 .education {
-  background-color: darkslateblue;
+  background-color: goldenrod;
+}
+
+.education-content {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.education-timeline {
+  width: 12px;
+  height: 300px;
+  border-radius: 19px;
+  background: hsl(0, 0%, 98%);
+  margin: 0 2.5rem;
+}
+
+.education-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.5rem;
+}
+
+.education-type {
+  background-color: forestgreen;
+}
+
+.education-year {
+  font-family: "Poppins Bold";
+}
+
+.education-card {
+  background-color: hsla(259, 27%, 27%, 0.2);
+  padding: 1rem 3rem;
+  border-radius: 1rem;
 }
 
 .skills {
