@@ -199,10 +199,14 @@ p {
 }
 
 .projects {
+  background-color: salmon;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.projects h2 {
+  align-self: flex-start;
 }
 
 .project-card-wrapper {
@@ -271,4 +275,76 @@ p {
 
 .contact {
   background-color: mediumblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact h2 {
+  align-self: flex-start;
+}
+.contact h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-card-wrapper {
+  width: 300px;
+  background-color: rgba(63, 51, 89, 0.2);
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+
+.input-box input {
+  border: none;
+  border-radius: 5px;
+  background-color: #130d23;
+  color: white;
+  padding: 7px 11px 0px 11px;
+  outline: none;
+}
+
+.input-box::-moz-placeholder {
+  color: #a0a0a0;
+}
+
+.input-box::placeholder {
+  color: #a0a0a0;
+}
+
+.contact-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-info {
+  display: flex;
+  gap: 20px;
+}
+
+.user-info input {
+  width: 115px;
+  padding-bottom: 10px;
+}
+
+.user-message input {
+  width: 250px;
+  padding-bottom: 50px;
+}
+
+.contact button {
+  font-family: "Poppins";
+  font-size: 10px;
+  border-radius: 42px;
+  border: none;
+  background-color: #46396a;
+  color: white;
+  padding: 5px 20px;
+  text-transform: lowercase;
+}
+
+.contact button:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
