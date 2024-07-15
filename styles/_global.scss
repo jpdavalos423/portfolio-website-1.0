@@ -7,6 +7,11 @@
   src: url(../assets/fonts/Poppins/Poppins-Bold.ttf);
 }
 
+main {
+  margin: auto;
+  max-width: 50rem;
+}
+
 html,
 button,
 input {
@@ -53,4 +58,40 @@ p {
 
 .subheading {
   font-size: $mobile-subheading;
+}
+
+@media (min-width: 768px) {
+  main {
+    max-width: 120rem;
+  }
+
+  body {
+    padding: 0 16rem;
+  }
+
+  h1 {
+    font-size: $desktop-h1;
+  }
+  h2 {
+    font-size: $desktop-h2;
+    text-transform: lowercase;
+    margin: 1rem 0;
+  }
+  h3 {
+    font-size: $desktop-h3;
+    margin: 1rem 0;
+  }
+  h4 {
+    font-size: $desktop-h4;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: $desktop-body;
+    line-height: 150%;
+  }
+
+  .subheading {
+    font-size: $desktop-subheading;
+  }
 }
