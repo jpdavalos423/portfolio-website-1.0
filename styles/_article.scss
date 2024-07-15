@@ -132,45 +132,31 @@
   }
 
   .skill-item {
+    width: 125px;
+    height: 100px;
+    background: rgba(63, 51, 89, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
     img {
       height: 75px;
     }
   }
 
-  .item-start-right {
-    width: 125px;
-    height: 100px;
-    background: rgba(63, 51, 89, 0.4);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 10px;
-    position: absolute;
+  .scroll-left {
     left: max(calc(125px * 5), 100%);
     animation-name: scrollLeft;
-    animation-duration: 20s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
   }
 
-  .item-start-left {
-    width: 125px;
-    height: 100px;
-    background: rgba(63, 51, 89, 0.4);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 10px;
-    position: absolute;
+  .scroll-right {
     right: max(calc(125px * 5), 100%);
     animation-name: scrollRight;
-    animation-duration: 20s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
   }
 
   .item1 {
@@ -205,7 +191,7 @@
   position: relative;
   background-color: rgba(63, 51, 89, 0.2);
   max-width: 300px;
-  height: 320px;
+  // height: 320px;
   border-radius: 20px;
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -220,7 +206,7 @@
 }
 
 .project-image-holder {
-  width: 300px;
+  max-width: 300px;
   height: 145px;
   border-radius: 20px 20px 0px 0px;
   background: url(../assets/images/portfolio-preveiw.png) lightgray 50% / cover
@@ -284,7 +270,7 @@
   justify-content: center;
   align-items: center;
   h2 {
-    align-self: flex-start;
+    align-self: center;
   }
   h3 {
     text-align: center;
@@ -294,7 +280,7 @@
 }
 
 .contact-card-wrapper {
-  width: 300px;
+  max-width: 300px;
   background-color: rgba(63, 51, 89, 0.2);
   padding: 15px 25px;
   border-radius: 10px;
@@ -366,8 +352,25 @@
 }
 
 @media (min-width: 768px) {
+  .project-card-wrapper {
+    max-width: 550px;
+  }
+
+  .project-image-holder {
+    max-width: 550px;
+    height: 270px;
+  }
+
+  .project-links {
+    div {
+      width: 189px;
+      height: 50px;
+      font-size: $desktop-body;
+    }
+  }
+
   .contact-card-wrapper {
-    width: 930px;
+    max-width: 930px;
     padding: 20px 95px;
     border-radius: 25px;
   }

@@ -23,6 +23,7 @@ body {
   padding: 3rem;
   background-image: url(../assets/images/mobile-background.png);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1,
@@ -204,38 +205,29 @@ p {
     right: -125px;
   }
 }
+.skills .skill-item {
+  width: 125px;
+  height: 100px;
+  background: rgba(63, 51, 89, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: absolute;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
 .skills .skill-item img {
   height: 75px;
 }
-.skills .item-start-right {
-  width: 125px;
-  height: 100px;
-  background: rgba(63, 51, 89, 0.4);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  position: absolute;
+.skills .scroll-left {
   left: max(625px, 100%);
   animation-name: scrollLeft;
-  animation-duration: 20s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
 }
-.skills .item-start-left {
-  width: 125px;
-  height: 100px;
-  background: rgba(63, 51, 89, 0.4);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  position: absolute;
+.skills .scroll-right {
   right: max(625px, 100%);
   animation-name: scrollRight;
-  animation-duration: 20s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
 }
 .skills .item1 {
   animation-delay: -16s;
@@ -267,7 +259,6 @@ p {
   position: relative;
   background-color: rgba(63, 51, 89, 0.2);
   max-width: 300px;
-  height: 320px;
   border-radius: 20px;
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -280,7 +271,7 @@ p {
 }
 
 .project-image-holder {
-  width: 300px;
+  max-width: 300px;
   height: 145px;
   border-radius: 20px 20px 0px 0px;
   background: url(../assets/images/portfolio-preveiw.png) lightgray 50%/cover no-repeat;
@@ -337,7 +328,7 @@ p {
   align-items: center;
 }
 .contact h2 {
-  align-self: flex-start;
+  align-self: center;
 }
 .contact h3 {
   text-align: center;
@@ -346,7 +337,7 @@ p {
 }
 
 .contact-card-wrapper {
-  width: 300px;
+  max-width: 300px;
   background-color: rgba(63, 51, 89, 0.2);
   padding: 15px 25px;
   border-radius: 10px;
@@ -420,8 +411,20 @@ p {
 }
 
 @media (min-width: 768px) {
+  .project-card-wrapper {
+    max-width: 550px;
+  }
+  .project-image-holder {
+    max-width: 550px;
+    height: 270px;
+  }
+  .project-links div {
+    width: 189px;
+    height: 50px;
+    font-size: 18px;
+  }
   .contact-card-wrapper {
-    width: 930px;
+    max-width: 930px;
     padding: 20px 95px;
     border-radius: 25px;
   }
