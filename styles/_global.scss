@@ -18,7 +18,8 @@ body {
   color: $white;
   padding: 3rem;
 
-  // background: url(../assets/images/mobile-background-main.png) no-repeat;
+  background-image: url(../assets/images/mobile-background.png);
+  background-size: cover;
 }
 
 h1,

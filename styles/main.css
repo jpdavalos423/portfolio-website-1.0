@@ -16,6 +16,8 @@ body {
   background-color: hsl(256, 46%, 9%);
   color: hsl(0, 0%, 98%);
   padding: 3rem;
+  background-image: url(../assets/images/mobile-background.png);
+  background-size: cover;
 }
 
 h1,
