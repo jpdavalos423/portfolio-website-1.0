@@ -33,14 +33,17 @@ h1 {
 h2 {
   font-size: 30px;
   text-transform: lowercase;
+  margin: 1rem 0;
 }
 
 h3 {
   font-size: 20px;
+  margin: 1rem 0;
 }
 
 h4 {
   font-size: 16px;
+  margin-bottom: 0.5rem;
 }
 
 p {
@@ -52,7 +55,8 @@ p {
 }
 
 main {
-  max-width: 76.8rem;
+  margin: auto;
+  max-width: 50rem;
 }
 
 .content-section {
@@ -117,7 +121,7 @@ main {
   background-color: hsla(259, 27%, 27%, 0.2);
   padding: 1rem 2.5rem;
   border-radius: 1rem;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 
 .education-logo {
@@ -127,7 +131,7 @@ main {
   border-radius: 36rem;
   position: absolute;
   top: 10%;
-  left: -32.25%;
+  left: -35%;
 }
 
 .skills {
@@ -164,7 +168,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 6px;
+  border-radius: 10px;
   position: absolute;
   left: max(625px, 100%);
   animation-name: scrollLeft;
@@ -179,7 +183,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 6px;
+  border-radius: 10px;
   position: absolute;
   right: max(625px, 100%);
   animation-name: scrollRight;
@@ -210,7 +214,7 @@ main {
   align-items: center;
 }
 .projects h2 {
-  align-self: flex-start;
+  align-self: flex-end;
 }
 
 .project-card-wrapper {
@@ -224,6 +228,9 @@ main {
 
 .project-card-wrapper:hover {
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
+}
+.project-card-wrapper:hover .project-image-holder {
+  mix-blend-mode: normal;
 }
 
 .project-image-holder {
@@ -288,7 +295,8 @@ main {
 }
 .contact h3 {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 0;
+  margin-bottom: 1rem;
 }
 
 .contact-card-wrapper {
@@ -305,6 +313,7 @@ main {
   color: white;
   padding: 7px 11px 0px 11px;
   outline: none;
+  font-size: 10px;
 }
 
 .input-box::-moz-placeholder {

@@ -33,12 +33,15 @@ h1 {
 h2 {
   font-size: $mobile-h2;
   text-transform: lowercase;
+  margin: 1rem 0;
 }
 h3 {
   font-size: $mobile-h3;
+  margin: 1rem 0;
 }
 h4 {
   font-size: $mobile-h4;
+  margin-bottom: 0.5rem;
 }
 
 p {
