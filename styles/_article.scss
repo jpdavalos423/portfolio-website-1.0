@@ -167,6 +167,10 @@
 
 .projects {
   // background-color: salmon;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-card-wrapper {
