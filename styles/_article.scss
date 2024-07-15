@@ -360,6 +360,10 @@
 }
 
 @media (min-width: 768px) {
+  .content-section {
+    margin: 15rem 0;
+  }
+
   .about p {
     max-width: 55rem;
     font-size: $desktop-body;
