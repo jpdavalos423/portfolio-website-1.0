@@ -91,7 +91,7 @@ p {
     line-height: 150%;
   }
   .subheading {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .content-section {
@@ -412,9 +412,18 @@ p {
 }
 
 @media (min-width: 768px) {
-  .languages-section {
+  .about p {
+    max-width: 55rem;
+    font-size: 18px;
+  }
+  .skills-subsection {
     display: flex;
-    flex-direction: row;
+  }
+  .frontend-section {
+    flex-direction: row-reverse;
+  }
+  .marquee-wrapper {
+    max-width: 0;
   }
   .project-card-wrapper {
     max-width: 550px;
