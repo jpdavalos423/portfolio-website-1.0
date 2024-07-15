@@ -86,6 +86,18 @@ main {
 
   top: 10%;
   left: -35%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 40px;
+  }
+}
+.ucsd-logo {
+  img {
+    padding-bottom: 5px;
+  }
 }
 
 .skills {
