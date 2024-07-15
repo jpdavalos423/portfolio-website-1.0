@@ -59,7 +59,10 @@
 
 .education-year {
   position: absolute;
-  left: 0%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   top: -40%;
   font-family: "Poppins Bold";
 }
@@ -380,6 +383,7 @@
   }
 
   .education-card {
+    padding: 2rem 0;
     width: 36rem;
     margin: 0;
   }
@@ -388,12 +392,19 @@
     width: 100px;
     height: 100px;
 
-    top: 0%;
-    left: 0%;
+    top: -95%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 
     img {
       height: 65px;
     }
+  }
+
+  .education-year {
+    top: -125%;
   }
 
   .ucsd-logo img {
@@ -434,7 +445,7 @@
 
   .contact-card-wrapper {
     max-width: 930px;
-    padding: 20px 95px;
+    padding: 2rem 5rem;
     border-radius: 25px;
   }
 
