@@ -3,7 +3,6 @@
 }
 
 .hero {
-  // background-color: seagreen;
   .subheading {
     span {
       font-family: "Poppins Bold";
@@ -18,16 +17,13 @@
   align-items: flex-end;
   text-align: right;
 
-  // background-color: orangered;
   p {
     max-width: 30rem;
-    // line-height: 150%;
     font-size: $mobile-body-m;
   }
 }
 
 .education {
-  // background-color: goldenrod;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -104,7 +100,6 @@
 }
 
 .skills {
-  // background-color: sienna;
   text-align: center;
 
   h3 {
@@ -167,25 +162,24 @@
     animation-name: scrollRight;
   }
 
-  .item1 {
+  .skill-item:nth-of-type(1) {
     animation-delay: calc(20s / 5 * (5 - 1) * -1);
   }
-  .item2 {
+  .skill-item:nth-of-type(2) {
     animation-delay: calc(20s / 5 * (5 - 2) * -1);
   }
-  .item3 {
+  .skill-item:nth-of-type(3) {
     animation-delay: calc(20s / 5 * (5 - 3) * -1);
   }
-  .item4 {
+  .skill-item:nth-of-type(4) {
     animation-delay: calc(20s / 5 * (5 - 4) * -1);
   }
-  .item5 {
+  .skill-item:nth-of-type(5) {
     animation-delay: calc(20s / 5 * (5 - 5) * -1);
   }
 }
 
 .projects {
-  // background-color: salmon;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -199,7 +193,6 @@
   position: relative;
   background-color: rgba(63, 51, 89, 0.2);
   max-width: 300px;
-  // height: 320px;
   border-radius: 20px;
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -208,9 +201,7 @@
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
     0 15px 40px rgba(166, 173, 201, 0.2);
 
-  .project-image-holder {
-    mix-blend-mode: normal;
-  }
+  transform: translateY(-1%);
 }
 
 .project-image-holder {
@@ -219,7 +210,6 @@
   border-radius: 20px 20px 0px 0px;
   background: url(../assets/images/portfolio-preveiw.png) lightgray 50% / cover
     no-repeat;
-  mix-blend-mode: luminosity;
 }
 
 .project-content {
@@ -272,7 +262,6 @@
 }
 
 .contact {
-  // background-color: mediumblue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -359,6 +348,32 @@
   text-shadow: 1px 1px 2px #427388;
 }
 
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transition: 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.hidden-right {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(5%);
+  transition: 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.hidden-left {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-5%);
+  transition: 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
 @media (min-width: 768px) {
   .content-section {
     margin: 15rem 0;
@@ -374,7 +389,6 @@
   }
 
   .education-timeline {
-    // width: 100%;
     margin: 7rem 0;
 
     width: 900px;

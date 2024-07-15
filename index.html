@@ -6,16 +6,18 @@
     <title>JP Davalos - Portfolio</title>
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/main.css" />
+
+    <script defer src="main.js"></script>
   </head>
   <body>
     <main>
-      <div class="hero content-section">
+      <div class="hero content-section hidden-left">
         <p>Hey, my name is</p>
         <h1>JP Davalos</h1>
         <p class="subheading">and I am a <span>software developer</span></p>
       </div>
 
-      <div class="about content-section">
+      <div class="about content-section hidden-right">
         <h2>Who am I?</h2>
         <p>
           I am a second year student at UC San Diego studying Computer Science.
@@ -25,7 +27,7 @@
         </p>
       </div>
 
-      <div class="education content-section">
+      <div class="education content-section hidden-left">
         <h2>Education</h2>
 
         <div class="education-content">
@@ -62,78 +64,78 @@
       </div>
 
       <div class="skills content-section">
-        <h2>Skills</h2>
+        <h2 class="hidden">Skills</h2>
 
-        <div class="languages-section skills-subsection">
+        <div class="languages-section skills-subsection hidden-left">
           <h3>Languages</h3>
           <div class="marquee-wrapper">
-            <div class="skill-item scroll-right item1">
+            <div class="skill-item scroll-right">
               <img src="./assets/images/logo-javascript.svg" alt="js logo" />
             </div>
-            <div class="skill-item scroll-right item2">
+            <div class="skill-item scroll-right">
               <img src="./assets/images/python-5.svg" alt="python logo" />
             </div>
-            <div class="skill-item scroll-right item3">
+            <div class="skill-item scroll-right">
               <img src="./assets/images/c-1.svg" alt="c logo" />
             </div>
-            <div class="skill-item scroll-right item4">
+            <div class="skill-item scroll-right">
               <img src="./assets/images/java-resize.svg" alt="java logo" />
             </div>
-            <div class="skill-item scroll-right item5">
+            <div class="skill-item scroll-right">
               <img src="./assets/images/bash-2.svg" alt="bash logo" />
             </div>
           </div>
         </div>
-        <div class="frontend-section skills-subsection">
+        <div class="frontend-section skills-subsection hidden-right">
           <h3>Frontend</h3>
           <div class="marquee-wrapper">
-            <div class="skill-item scroll-left item1">
+            <div class="skill-item scroll-left">
               <img src="./assets/images/react-2.svg" alt="react logo" />
             </div>
-            <div class="skill-item scroll-left item2">
+            <div class="skill-item scroll-left">
               <img src="./assets/images/sass-1.svg" alt="sass logo" />
             </div>
-            <div class="skill-item scroll-left item3">
+            <div class="skill-item scroll-left">
               <img src="./assets/images/nodejs-3.svg" alt="node logo" />
             </div>
-            <div class="skill-item scroll-left item4">
+            <div class="skill-item scroll-left">
               <img
                 src="./assets/images/bootstrap-5-1.svg"
                 alt="bootstrap logo"
               />
             </div>
-            <div class="skill-item scroll-left item5">
+            <div class="skill-item scroll-left">
               <img src="./assets/images/jquery-4.svg" alt="jquery logo" />
             </div>
           </div>
         </div>
 
-        <div class="tools-section skills-subsection">
+        <div class="tools-section skills-subsection hidden-left">
           <h3>Tools</h3>
           <div class="marquee-wrapper">
-            <div class="skill-item scroll-right item1">
+            <div class="skill-item scroll-right">
               <img src="./assets/images/github-icon-2.svg" alt="github logo" />
             </div>
-            <div class="skill-item scroll-right item2">
+            <div class="skill-item scroll-right">
               <img src="./assets/images/figma-icon.svg" alt="figma-icon" />
             </div>
-            <div class="skill-item scroll-right item3">
+            <div class="skill-item scroll-right">
               <img
                 src="./assets/images/visual-studio-code-1.svg"
                 alt="vs code logo"
               />
             </div>
-            <div class="skill-item scroll-right item4">
+            <div class="skill-item scroll-right">
               <img src="./assets/images/mongodb-icon-1.svg" alt="mongo icon" />
             </div>
-            <div class="skill-item scroll-right item5">
+            <div class="skill-item scroll-right">
               <img src="./assets/images/Jupyter_logo.svg" alt="jupyter logo" />
             </div>
           </div>
         </div>
       </div>
 
-      <div class="projects content-section">
+      <div class="projects content-section hidden-right">
         <h2>Projects</h2>
         <div class="project-card-wrapper">
           <div class="project-image-holder"></div>
@@ -157,7 +159,7 @@
         </div>
       </div>
 
-      <div class="contact content-section">
+      <div class="contact content-section hidden">
         <h2>Contact</h2>
         <div class="contact-card-wrapper">
           <h3>Let's get in touch</h3>
