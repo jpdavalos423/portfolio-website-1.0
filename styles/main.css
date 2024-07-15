@@ -68,6 +68,7 @@ p {
   }
   body {
     padding: 0 16rem;
+    background-image: url(../assets/images/desktop-background.png);
   }
   h1 {
     font-size: 114px;
@@ -411,12 +412,19 @@ p {
 }
 
 @media (min-width: 768px) {
+  .languages-section {
+    display: flex;
+    flex-direction: row;
+  }
   .project-card-wrapper {
     max-width: 550px;
   }
   .project-image-holder {
     max-width: 550px;
     height: 270px;
+  }
+  .project-content {
+    padding: 3.5rem;
   }
   .project-links div {
     width: 189px;
