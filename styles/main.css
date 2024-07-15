@@ -67,7 +67,7 @@ p {
     max-width: 120rem;
   }
   body {
-    padding: 0 16rem;
+    padding: 0 8rem;
     background-image: url(../assets/images/desktop-background.png);
   }
   h1 {
@@ -154,9 +154,13 @@ p {
 .education-card {
   position: relative;
   background-color: hsla(259, 27%, 27%, 0.2);
-  padding: 1rem 2.5rem;
+  width: 21.2rem;
+  padding: 1rem;
   border-radius: 1rem;
   margin-left: 1.5rem;
+}
+.education-card .subheading {
+  font-family: Poppins Bold;
 }
 
 .education-logo {
@@ -415,6 +419,35 @@ p {
   .about p {
     max-width: 55rem;
     font-size: 18px;
+  }
+  .education-content {
+    flex-direction: column;
+  }
+  .education-timeline {
+    margin: 7rem 0;
+    width: 900px;
+    height: 12px;
+    border-radius: 19px;
+  }
+  .education-description {
+    flex-direction: row;
+  }
+  .education-card {
+    width: 36rem;
+    margin: 0;
+  }
+  .education-logo {
+    width: 100px;
+    height: 100px;
+    top: 0%;
+    left: 0%;
+  }
+  .education-logo img {
+    height: 65px;
+  }
+  .ucsd-logo img {
+    height: 75px;
+    padding-bottom: 10px;
   }
   .skills-subsection {
     display: flex;
