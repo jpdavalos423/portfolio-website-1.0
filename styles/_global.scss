@@ -33,7 +33,6 @@ h2,
 h3,
 h4 {
   font-family: "Poppins Bold";
-  // line-height: normal;
 }
 
 h1 {
@@ -42,14 +41,17 @@ h1 {
 h2 {
   font-size: $mobile-h2;
   text-transform: lowercase;
+  line-height: normal;
   margin: 1rem 0;
 }
 h3 {
   font-size: $mobile-h3;
+  line-height: normal;
   margin: 1rem 0;
 }
 h4 {
   font-size: $mobile-h4;
+  line-height: normal;
   margin-bottom: 0.5rem;
 }
 

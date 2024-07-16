@@ -40,16 +40,19 @@ h1 {
 h2 {
   font-size: 30px;
   text-transform: lowercase;
+  line-height: normal;
   margin: 1rem 0;
 }
 
 h3 {
   font-size: 20px;
+  line-height: normal;
   margin: 1rem 0;
 }
 
 h4 {
   font-size: 16px;
+  line-height: normal;
   margin-bottom: 0.5rem;
 }
 
@@ -97,6 +100,27 @@ p {
   margin: 12rem 0;
 }
 
+#nav-bar {
+  width: 65rem;
+  margin: 4rem 0;
+}
+
+#nav-bar-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link li {
+  display: inline;
+  text-transform: lowercase;
+  font-size: 18px;
+  color: #a0a0a0;
+}
+
+.nav-link li:hover {
+  color: hsl(0, 0%, 98%);
+}
+
 .hero .subheading span {
   font-family: "Poppins Bold";
   text-decoration: underline;
@@ -111,24 +135,24 @@ p {
   }
 }
 
-.about {
+#about {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
 }
-.about p {
+#about p {
   max-width: 30rem;
   font-size: 12px;
 }
 
-.education {
+#education {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.education h2 {
+#education h2 {
   align-self: flex-start;
 }
 
@@ -194,13 +218,13 @@ p {
   padding-bottom: 5px;
 }
 
-.skills {
+#skills {
   text-align: center;
 }
-.skills h3 {
+#skills h3 {
   text-transform: lowercase;
 }
-.skills .marquee-wrapper {
+#skills .marquee-wrapper {
   width: 100%;
   max-width: 600px;
   margin-inline: auto;
@@ -221,7 +245,7 @@ p {
     right: -125px;
   }
 }
-.skills .skill-item {
+#skills .skill-item {
   width: 125px;
   height: 100px;
   background: rgba(63, 51, 89, 0.4);
@@ -234,40 +258,40 @@ p {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-.skills .skill-item img {
+#skills .skill-item img {
   height: 75px;
 }
-.skills .scroll-left {
+#skills .scroll-left {
   left: max(625px, 100%);
   animation-name: scrollLeft;
 }
-.skills .scroll-right {
+#skills .scroll-right {
   right: max(625px, 100%);
   animation-name: scrollRight;
 }
-.skills .skill-item:nth-of-type(1) {
+#skills .skill-item:nth-of-type(1) {
   animation-delay: -16s;
 }
-.skills .skill-item:nth-of-type(2) {
+#skills .skill-item:nth-of-type(2) {
   animation-delay: -12s;
 }
-.skills .skill-item:nth-of-type(3) {
+#skills .skill-item:nth-of-type(3) {
   animation-delay: -8s;
 }
-.skills .skill-item:nth-of-type(4) {
+#skills .skill-item:nth-of-type(4) {
   animation-delay: -4s;
 }
-.skills .skill-item:nth-of-type(5) {
+#skills .skill-item:nth-of-type(5) {
   animation-delay: 0s;
 }
 
-.projects {
+#projects {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.projects h2 {
+#projects h2 {
   align-self: flex-end;
 }
 
@@ -334,16 +358,16 @@ p {
   text-shadow: 1px 1px 2px #427388;
 }
 
-.contact {
+#contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.contact h2 {
+#contact h2 {
   align-self: center;
 }
-.contact h3 {
+#contact h3 {
   text-align: center;
   margin: 0;
   margin-bottom: 1rem;
@@ -396,7 +420,7 @@ p {
   padding-bottom: 50px;
 }
 
-.contact button {
+#contact button {
   font-family: "Poppins";
   font-size: 10px;
   border-radius: 42px;
@@ -414,7 +438,7 @@ p {
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.contact button:hover {
+#contact button:hover {
   cursor: pointer;
   border: 1px solid;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
@@ -453,7 +477,7 @@ p {
   .content-section {
     margin: 15rem 0;
   }
-  .about p {
+  #about p {
     max-width: 55rem;
     font-size: 18px;
   }
@@ -534,7 +558,7 @@ p {
     width: 740px;
     padding-bottom: 10rem;
   }
-  .contact button {
+  #contact button {
     font-size: 18px;
     padding: 12px 34px;
   }
