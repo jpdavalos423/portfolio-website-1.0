@@ -3,30 +3,21 @@
 }
 
 //NAVBAR
-#nav-bar {
-  width: 65rem;
-  margin: 4rem 0;
-}
 
 #nav-bar-links {
-  display: flex;
-  justify-content: space-between;
+  display: none;
 }
 
-.nav-link li {
-  display: inline;
-  text-transform: lowercase;
-  font-size: $desktop-body;
-  color: #a0a0a0;
-}
-
-.nav-link li:hover {
-  color: $white;
+.nav-button svg {
+  font-size: $mobile-body-m;
+  fill: white;
+  height: 20px;
 }
 
 //HERO SECTION
 
 #hero {
+  margin-top: 8rem;
   .subheading {
     span {
       font-family: "Poppins Bold";
@@ -428,6 +419,30 @@
     margin: 15rem 0;
   }
 
+  #nav-bar {
+    max-width: 62.5rem;
+    margin: 4rem 0;
+  }
+
+  #nav-bar-links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-link li {
+    display: inline;
+    text-transform: lowercase;
+    font-size: $desktop-body;
+    color: #a0a0a0;
+  }
+
+  .nav-link li:hover {
+    color: $white;
+  }
+
+  .nav-button {
+    display: none;
+  }
   #about p {
     max-width: 55rem;
     font-size: $desktop-body;
