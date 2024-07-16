@@ -121,11 +121,11 @@ p {
   color: hsl(0, 0%, 98%);
 }
 
-.hero .subheading span {
+#hero .subheading span {
   font-family: "Poppins Bold";
   text-decoration: underline;
 }
-.hero .subheading span span {
+#hero .subheading span span {
   border-right: 0.1em solid;
   animation: caret 1s steps(1) infinite;
 }
