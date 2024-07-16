@@ -47,13 +47,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
       }, 2500);
     }
     // check if dataText[i] exists
-    if (i < dataText[i].length) {
-      // text exists! start typewriter animation
-      typeWriter(dataText[i], 0, function () {
-        // after callback (and whole text has been animated), start next text
-        StartTextAnimation(i + 1);
-      });
-    }
+    try {
+      if (i < dataText[i].length) {
+        // text exists! start typewriter animation
+        typeWriter(dataText[i], 0, function () {
+          // after callback (and whole text has been animated), start next text
+          StartTextAnimation(i + 1);
+        });
+      }
+    } catch (e) {}
   }
   // start the text animation
   StartTextAnimation(0);
@@ -61,12 +63,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 let menu = document.querySelector(".menu-button");
 let navbar = document.querySelector(".nav-bar-links");
-let navlink = document.querySelector(".nav-link");
+let navlink = document.querySelectorAll(".nav-link");
 
 menu.addEventListener("click", () => {
   navbar.classList.toggle("open");
 });
 
-navlink.addEventListener("click", () => {
-  navbar.classList.toggle("open");
-});
+for (let i = 0; i < navlink.length; i++) {
+  navlink[i].addEventListener("click", () => {
+    navbar.classList.toggle("open");
+  });
+}
