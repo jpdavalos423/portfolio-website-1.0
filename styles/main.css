@@ -115,7 +115,7 @@ p {
   position: absolute;
   visibility: hidden;
   top: 0px;
-  width: min(100%, 300px);
+  width: min(100%, 350px);
   z-index: 10001;
   background: hsla(259, 27%, 27%, 0.99);
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
@@ -595,14 +595,27 @@ p {
     height: 65px;
     padding-bottom: 10px;
   }
+  #skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #skills h3 {
+    padding-top: 5px;
+  }
   .skills-subsection {
     display: flex;
+    width: 60rem;
+  }
+  .languages-section h3,
+  .tools-section h3 {
+    padding-right: 1rem;
   }
   .frontend-section {
     flex-direction: row-reverse;
   }
-  .marquee-wrapper {
-    max-width: 0;
+  .frontend-section h3 {
+    padding-left: 1rem;
   }
   .project-card-wrapper {
     max-width: 550px;
@@ -662,11 +675,23 @@ p {
   .education-logo img {
     height: 65px;
   }
+  .education-year {
+    top: -125%;
+  }
   .ucsd-logo img {
     height: 75px;
+  }
+  .skills-subsection {
+    width: 90rem;
   }
   .contact-card-wrapper {
     max-width: 930px;
     padding: 2rem 5rem;
+  }
+  .user-info input {
+    width: 360px;
+  }
+  .user-message input {
+    width: 740px;
   }
 }/*# sourceMappingURL=main.css.map */
