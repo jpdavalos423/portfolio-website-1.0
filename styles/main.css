@@ -31,7 +31,6 @@ h2,
 h3,
 h4 {
   font-family: "Poppins Bold";
-  line-height: normal;
 }
 
 h1 {
@@ -101,6 +100,15 @@ p {
 .hero .subheading span {
   font-family: "Poppins Bold";
   text-decoration: underline;
+}
+.hero .subheading span span {
+  border-right: 0.1em solid;
+  animation: caret 1s steps(1) infinite;
+}
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .about {
