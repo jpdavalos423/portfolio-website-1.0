@@ -104,10 +104,10 @@ p {
   display: none;
 }
 
-.nav-button svg {
-  font-size: 12px;
-  fill: white;
-  height: 20px;
+.nav-button i {
+  font-size: 14px;
+  color: white;
+  display: block;
 }
 
 #hero {
