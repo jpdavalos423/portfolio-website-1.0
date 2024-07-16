@@ -1,6 +1,5 @@
 const Observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
     } else {
@@ -58,4 +57,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
   // start the text animation
   StartTextAnimation(0);
+});
+
+let menu = document.querySelector(".menu-button");
+let navbar = document.querySelector(".nav-bar-links");
+let navlink = document.querySelector(".nav-link");
+
+menu.addEventListener("click", () => {
+  navbar.classList.toggle("open");
+});
+
+navlink.addEventListener("click", () => {
+  navbar.classList.toggle("open");
 });

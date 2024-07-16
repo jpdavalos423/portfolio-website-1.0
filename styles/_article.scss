@@ -4,12 +4,55 @@
 
 //NAVBAR
 
-#nav-bar-links {
-  display: none;
+#nav-bar {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.nav-button i {
-  font-size: $mobile-subheading;
+.nav-bar-links {
+  position: absolute;
+  visibility: hidden;
+  top: 0px;
+  width: min(100%, 300px);
+  z-index: 10001;
+  background: hsla(259, 27%, 27%, 0.99);
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+  opacity: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.open {
+  visibility: visible;
+  top: 30px;
+  opacity: 1;
+}
+
+.nav-link {
+  display: inline;
+  text-transform: lowercase;
+  font-size: $mobile-body-m;
+
+  color: #a0a0a0;
+  margin: 12px 0;
+  padding: 0 25px;
+  transition: all 0.5s ease;
+}
+
+.nav-link li:hover {
+  color: $white;
+}
+
+.menu-button i {
+  font-size: $mobile-h3;
   color: white;
   display: block;
 }
@@ -17,7 +60,7 @@
 //HERO SECTION
 
 #hero {
-  margin-top: 8rem;
+  // margin-top: 8rem;
   .subheading {
     span {
       font-family: "Poppins Bold";
@@ -420,27 +463,31 @@
   }
 
   #nav-bar {
-    max-width: 62.5rem;
+    display: inline-block;
     margin: 4rem 0;
   }
 
-  #nav-bar-links {
+  .nav-bar-links {
+    box-shadow: none;
+    visibility: visible;
+
+    opacity: 1;
+    left: 0%;
+    background-color: transparent;
+    width: 62.5rem;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 
-  .nav-link li {
-    display: inline;
-    text-transform: lowercase;
-    font-size: $desktop-body;
-    color: #a0a0a0;
+  .nav-link {
+    padding: 0;
+    li {
+      font-size: $desktop-body;
+    }
   }
 
-  .nav-link li:hover {
-    color: $white;
-  }
-
-  .nav-button {
+  .menu-button {
     display: none;
   }
   #about p {
