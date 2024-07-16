@@ -6,6 +6,10 @@
   font-family: "Poppins Bold";
   src: url(../assets/fonts/Poppins/Poppins-Bold.ttf);
 }
+:root {
+  color-scheme: dark;
+}
+
 main {
   margin: auto;
   max-width: 50rem;
