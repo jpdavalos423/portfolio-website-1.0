@@ -133,7 +133,7 @@ p {
   display: inline;
   text-transform: lowercase;
   font-size: 12px;
-  color: #a0a0a0;
+  color: hsl(0, 0%, 63%);
   margin: 12px 0;
   padding: 0 25px;
   transition: all 0.5s ease;
@@ -145,7 +145,7 @@ p {
 
 .menu-button i {
   font-size: 20px;
-  color: white;
+  color: hsl(0, 0%, 98%);
   display: block;
 }
 
@@ -276,7 +276,7 @@ p {
 #skills .skill-item {
   width: 125px;
   height: 100px;
-  background: rgba(63, 51, 89, 0.4);
+  background: hsla(259, 27%, 27%, 0.4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -325,7 +325,7 @@ p {
 
 .project-card-wrapper {
   position: relative;
-  background-color: rgba(63, 51, 89, 0.2);
+  background-color: hsla(259, 27%, 27%, 0.2);
   max-width: 300px;
   border-radius: 20px;
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -373,10 +373,10 @@ p {
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 .project-links .live-site {
-  background-color: #364079;
+  background-color: hsl(231, 38%, 34%);
 }
 .project-links .github-repo {
-  background-color: #0a0a0f;
+  background-color: hsl(240, 20%, 5%);
 }
 .project-links div:hover {
   border: 1px solid;
@@ -403,7 +403,7 @@ p {
 
 .contact-card-wrapper {
   max-width: 300px;
-  background-color: rgba(63, 51, 89, 0.2);
+  background-color: hsla(259, 27%, 27%, 0.2);
   padding: 15px 25px;
   border-radius: 10px;
 }
@@ -411,7 +411,7 @@ p {
 .input-box input {
   border: none;
   border-radius: 5px;
-  background-color: #130d23;
+  background-color: hsl(256, 46%, 9%);
   color: white;
   padding: 7px 11px 0px 11px;
   outline: none;
@@ -453,7 +453,7 @@ p {
   font-size: 10px;
   border-radius: 42px;
   border: none;
-  background-color: #46396a;
+  background-color: hsl(259, 27%, 27%);
   color: white;
   padding: 5px 20px;
   text-transform: lowercase;
