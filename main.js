@@ -2,8 +2,6 @@ const Observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
-    } else {
-      entry.target.classList.remove("show");
     }
   });
 });
@@ -74,3 +72,5 @@ for (let i = 0; i < navlink.length; i++) {
     navbar.classList.toggle("open");
   });
 }
+
+document.getElementById("year").innerHTML = new Date().getFullYear();

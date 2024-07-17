@@ -533,6 +533,12 @@
   transform: translateX(0);
 }
 
+footer {
+  font-size: $mobile-body-s;
+  color: $light-grey;
+  text-align: center;
+}
+
 //DESKTOP STYLES
 
 @media (min-width: 768px) {
@@ -754,6 +760,10 @@
         transform: translateX(37.5px);
       }
     }
+  }
+
+  footer {
+    font-size: $desktop-body;
   }
 }
 
