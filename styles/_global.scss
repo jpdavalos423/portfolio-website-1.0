@@ -42,12 +42,14 @@ h4 {
 
 h1 {
   font-size: $mobile-h1;
+  text-shadow: 3px 3px 0 $ultra-violet;
 }
 h2 {
   font-size: $mobile-h2;
   text-transform: lowercase;
   line-height: normal;
   margin: 1rem 0;
+  text-shadow: 2px 2px 0 $ultra-violet;
 }
 h3 {
   font-size: $mobile-h3;
@@ -80,11 +82,13 @@ p {
 
   h1 {
     font-size: $desktop-h1;
+    text-shadow: 5px 5px 0 $ultra-violet;
   }
   h2 {
     font-size: $desktop-h2;
     text-transform: lowercase;
     margin: 1rem 0;
+    text-shadow: 3px 3px 0 $ultra-violet;
   }
   h3 {
     font-size: $desktop-h3;
