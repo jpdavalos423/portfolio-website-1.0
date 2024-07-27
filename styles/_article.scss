@@ -330,6 +330,12 @@
   }
 }
 
+.all-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .project-card-wrapper {
   position: relative;
   background-color: $very-transparent-violet;
@@ -349,8 +355,13 @@
   max-width: 300px;
   height: 145px;
   border-radius: 20px 20px 0px 0px;
-  background: url(../assets/images/portfolio-preview.png) lightgray 50% / cover
-    no-repeat;
+}
+
+#portfolio-project {
+  .project-image-holder {
+    background: url(../assets/images/portfolio-preview.png) lightgray 50% /
+      cover no-repeat;
+  }
 }
 
 .project-content {
@@ -681,6 +692,11 @@ footer {
     h3 {
       padding-left: 1rem;
     }
+  }
+
+  .all-projects {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .project-card-wrapper {
