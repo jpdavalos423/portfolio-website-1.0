@@ -352,6 +352,7 @@ p {
 }
 #skills .skill-item img {
   height: 75px;
+  width: 100px;
 }
 #skills .scroll-left {
   left: max(625px, 100%);
@@ -414,6 +415,10 @@ p {
 
 #portfolio-project .project-image-holder {
   background: url(../assets/images/portfolio-preview.png) lightgray 50%/cover no-repeat;
+}
+
+#algorithm-project .project-image-holder {
+  background: url(../assets/images/algorithm-preview.png) lightgray 50%/cover no-repeat;
 }
 
 .project-content {

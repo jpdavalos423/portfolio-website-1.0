@@ -288,6 +288,7 @@
     animation-iteration-count: infinite;
     img {
       height: 75px;
+      width: 100px;
     }
   }
 
@@ -360,6 +361,12 @@
 #portfolio-project {
   .project-image-holder {
     background: url(../assets/images/portfolio-preview.png) lightgray 50% /
+      cover no-repeat;
+  }
+}
+#algorithm-project {
+  .project-image-holder {
+    background: url(../assets/images/algorithm-preview.png) lightgray 50% /
       cover no-repeat;
   }
 }
