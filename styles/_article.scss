@@ -334,6 +334,7 @@
 .all-projects {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   gap: 2rem;
 }
 
@@ -368,6 +369,12 @@
   .project-image-holder {
     background: url(../assets/images/algorithm-preview.png) lightgray 50% /
       cover no-repeat;
+  }
+}
+#spotify-project {
+  .project-image-holder {
+    background: url(../assets/images/spotify-preview.png) lightgray 50% / cover
+      no-repeat;
   }
 }
 
