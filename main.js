@@ -15,7 +15,13 @@ hiddenElementsRight.forEach((el) => Observer.observe(el));
 
 document.addEventListener("DOMContentLoaded", function (event) {
   // array with texts to type in typewriter
-  var dataText = ["frontend developer", "musician", "software developer"];
+  var dataText = [
+    "frontend developer",
+    "backend developer",
+    "musician",
+    "software developer",
+    "fullstack developer",
+  ];
 
   // type one text in the typwriter
   // keeps calling itself until the text is finished

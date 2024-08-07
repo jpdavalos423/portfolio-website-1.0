@@ -352,6 +352,7 @@ p {
 }
 #skills .skill-item img {
   height: 75px;
+  width: 100px;
 }
 #skills .scroll-left {
   left: max(625px, 100%);
@@ -387,6 +388,13 @@ p {
   align-self: flex-end;
 }
 
+.all-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
 .project-card-wrapper {
   position: relative;
   background-color: hsla(259, 27%, 27%, 0.2);
@@ -404,7 +412,18 @@ p {
   max-width: 300px;
   height: 145px;
   border-radius: 20px 20px 0px 0px;
+}
+
+#portfolio-project .project-image-holder {
   background: url(../assets/images/portfolio-preview.png) lightgray 50%/cover no-repeat;
+}
+
+#algorithm-project .project-image-holder {
+  background: url(../assets/images/algorithm-preview.png) lightgray 50%/cover no-repeat;
+}
+
+#spotify-project .project-image-holder {
+  background: url(../assets/images/spotify-preview.png) lightgray 50%/cover no-repeat;
 }
 
 .project-content {
@@ -686,6 +705,10 @@ footer {
   }
   .frontend-section h3 {
     padding-left: 1rem;
+  }
+  .all-projects {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .project-card-wrapper {
     max-width: 550px;
