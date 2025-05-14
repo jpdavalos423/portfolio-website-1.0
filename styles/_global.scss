@@ -28,7 +28,12 @@ body {
   color: $white;
   padding: 3rem 3rem 0 3rem;
 
-  background-image: url(../assets/images/mobile-background.png);
+  background-image: url(../assets/images/background/mobile-background.webp);
+  @supports not (
+    background-image: url(../assets/images/background/mobile-background.webp)
+  ) {
+    background-image: url(../assets/images/background/mobile-background.png);
+  }
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -77,7 +82,12 @@ p {
 
   body {
     padding: 0 8rem;
-    background-image: url(../assets/images/desktop-background.png);
+    background-image: url(../assets/images/background/desktop-background.webp);
+    @supports not (
+      background-image: url(../assets/images/background/desktop-background.webp)
+    ) {
+      background-image: url(../assets/images/background/desktop-background.png);
+    }
   }
 
   h1 {

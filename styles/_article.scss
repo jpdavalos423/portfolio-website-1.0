@@ -361,20 +361,38 @@
 
 #portfolio-project {
   .project-image-holder {
-    background: url(../assets/images/portfolio-preview.png) lightgray 50% /
-      cover no-repeat;
+    background: url(../assets/images/project-images/portfolio-preview.webp)
+      lightgray 50% / cover no-repeat;
+    @supports not (
+      background-image:
+        url(../assets/images/project-images/portfolio-preview.webp)
+    ) {
+      background-image: url(../assets/images/project-images/portfolio-preview.png);
+    }
   }
 }
 #algorithm-project {
   .project-image-holder {
-    background: url(../assets/images/algorithm-preview.png) lightgray 50% /
-      cover no-repeat;
+    background: url(../assets/images/project-images/algorithm-preview.webp)
+      lightgray 50% / cover no-repeat;
+    @supports not (
+      background-image:
+        url(../assets/images/project-images/algorithm-preview.webp)
+    ) {
+      background-image: url(../assets/images/project-images/algorithm-preview.png);
+    }
   }
 }
 #spotify-project {
   .project-image-holder {
-    background: url(../assets/images/spotify-preview.png) lightgray 50% / cover
-      no-repeat;
+    background: url(../assets/images/project-images/spotify-preview.webp)
+      lightgray 50% / cover no-repeat;
+    @supports not (
+      background-image:
+        url(../assets/images/project-images/spotify-preview.webp)
+    ) {
+      background-image: url(../assets/images/project-images/spotify-preview.png);
+    }
   }
 }
 

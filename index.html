@@ -10,7 +10,10 @@
     ></script>
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/main.css" />
-
+    <script>
+      const RESUME_LINK =
+        "https://drive.google.com/file/d/1QvEB4uQbFJ3Vhw4wWDu68OkJxyphR1xv/view?usp=sharing";
+    </script>
     <script defer src="main.js"></script>
   </head>
   <body>
@@ -38,7 +41,7 @@
           </a>
 
           <a
-            href="https://drive.google.com/file/d/1NQrpau8B7yDbP2PLweILvyLU-CIg_Qlc/view?usp=sharing"
+            data-resume-link
             id="resume-link-mobile"
             class="resume-link nav-link"
           >
@@ -46,9 +49,7 @@
           </a>
         </ul>
 
-        <a
-          href="https://drive.google.com/file/d/1NQrpau8B7yDbP2PLweILvyLU-CIg_Qlc/view?usp=sharing"
-        >
+        <a data-resume-link>
           <div id="resume-link-desktop" class="resume-link nav-link">
             <p>My Resume</p>
           </div>
@@ -118,20 +119,29 @@
             <h3>Languages</h3>
             <div class="marquee-wrapper">
               <div class="skill-item scroll-right">
-                <img src="./assets/images/logo-javascript.svg" alt="js logo" />
-              </div>
-              <div class="skill-item scroll-right">
-                <img src="./assets/images/python-5.svg" alt="python logo" />
-              </div>
-              <div class="skill-item scroll-right">
-                <img src="./assets/images/c-1.svg" alt="c logo" />
-              </div>
-              <div class="skill-item scroll-right">
-                <img src="./assets/images/java-resize.svg" alt="java logo" />
+                <img
+                  src="./assets/images/icons/logo-javascript.svg"
+                  alt="js logo"
+                />
               </div>
               <div class="skill-item scroll-right">
                 <img
-                  src="./assets/images/typescript.svg"
+                  src="./assets/images/icons/python-5.svg"
+                  alt="python logo"
+                />
+              </div>
+              <div class="skill-item scroll-right">
+                <img src="./assets/images/icons/c-1.svg" alt="c logo" />
+              </div>
+              <div class="skill-item scroll-right">
+                <img
+                  src="./assets/images/icons/java-resize.svg"
+                  alt="java logo"
+                />
+              </div>
+              <div class="skill-item scroll-right">
+                <img
+                  src="./assets/images/icons/typescript.svg"
                   alt="typescript logo"
                 />
               </div>
@@ -141,22 +151,22 @@
             <h3>Frontend</h3>
             <div class="marquee-wrapper">
               <div class="skill-item scroll-left">
-                <img src="./assets/images/react-2.svg" alt="react logo" />
+                <img src="./assets/images/icons/react-2.svg" alt="react logo" />
               </div>
               <div class="skill-item scroll-left">
-                <img src="./assets/images/sass-1.svg" alt="sass logo" />
+                <img src="./assets/images/icons/sass-1.svg" alt="sass logo" />
               </div>
               <div class="skill-item scroll-left">
-                <img src="./assets/images/nodejs-3.svg" alt="node logo" />
+                <img src="./assets/images/icons/nodejs-3.svg" alt="node logo" />
               </div>
               <div class="skill-item scroll-left">
                 <img
-                  src="./assets/images/tailwind-css-2.svg"
+                  src="./assets/images/icons/tailwind-css-2.svg"
                   alt="tailwind logo"
                 />
               </div>
               <div class="skill-item scroll-left">
-                <img src="./assets/images/next-js.svg" alt="next logo" />
+                <img src="./assets/images/icons/next-js.svg" alt="next logo" />
               </div>
             </div>
           </div>
@@ -166,28 +176,31 @@
             <div class="marquee-wrapper">
               <div class="skill-item scroll-right">
                 <img
-                  src="./assets/images/github-icon-2.svg"
+                  src="./assets/images/icons/github-icon-2.svg"
                   alt="github logo"
                 />
               </div>
               <div class="skill-item scroll-right">
-                <img src="./assets/images/figma-icon.svg" alt="figma-icon" />
+                <img
+                  src="./assets/images/icons/figma-icon.svg"
+                  alt="figma-icon"
+                />
               </div>
               <div class="skill-item scroll-right">
                 <img
-                  src="./assets/images/visual-studio-code-1.svg"
+                  src="./assets/images/icons/visual-studio-code-1.svg"
                   alt="vs code logo"
                 />
               </div>
               <div class="skill-item scroll-right">
                 <img
-                  src="./assets/images/mongodb-icon-1.svg"
+                  src="./assets/images/icons/mongodb-icon-1.svg"
                   alt="mongo icon"
                 />
               </div>
               <div class="skill-item scroll-right">
                 <img
-                  src="./assets/images/Jupyter_logo.svg"
+                  src="./assets/images/icons/Jupyter_logo.svg"
                   alt="jupyter logo"
                 />
               </div>
@@ -224,15 +237,15 @@
             <div class="project-content">
               <h4>Sorting Algorithm Visualizer</h4>
               <p>
-                Developed an interactive tool to help students learn common
+                Developing an interactive tool to help students learn common
                 sorting algorithms through step-by-step visuals. Includes basic
                 algorithms such as Bubble Sort, Selection Sort, Merge Sort, etc.
               </p>
 
               <div class="project-links">
-                <a href="https://sorting-algorithms-eight.vercel.app/">
+                <!-- <a href="https://sorting-algorithms-eight.vercel.app/">
                   <div class="live-site">Live Site</div>
-                </a>
+                </a> -->
                 <a href="https://github.com/jpdavalos423/sorting-algorithms">
                   <div class="github-repo">GitHub Repo</div>
                 </a>
