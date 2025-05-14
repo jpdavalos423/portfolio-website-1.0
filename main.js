@@ -80,3 +80,8 @@ for (let i = 0; i < navlink.length; i++) {
 }
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
+
+// Add this at the beginning of your main.js file
+document.querySelectorAll('[data-resume-link]').forEach(link => {
+    link.href = RESUME_LINK;
+});

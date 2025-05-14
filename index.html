@@ -10,7 +10,10 @@
     ></script>
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/main.css" />
-
+    <script>
+      const RESUME_LINK =
+        "https://drive.google.com/file/d/1QvEB4uQbFJ3Vhw4wWDu68OkJxyphR1xv/view?usp=sharing";
+    </script>
     <script defer src="main.js"></script>
   </head>
   <body>
@@ -38,7 +41,7 @@
           </a>
 
           <a
-            href="https://drive.google.com/file/d/1NQrpau8B7yDbP2PLweILvyLU-CIg_Qlc/view?usp=sharing"
+            data-resume-link
             id="resume-link-mobile"
             class="resume-link nav-link"
           >
@@ -46,9 +49,7 @@
           </a>
         </ul>
 
-        <a
-          href="https://drive.google.com/file/d/1NQrpau8B7yDbP2PLweILvyLU-CIg_Qlc/view?usp=sharing"
-        >
+        <a data-resume-link>
           <div id="resume-link-desktop" class="resume-link nav-link">
             <p>My Resume</p>
           </div>
