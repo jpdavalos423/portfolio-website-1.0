@@ -451,6 +451,15 @@ p {
   }
 }
 
+#pokecollect-project .project-image-holder {
+  background: url(../assets/images/project-images/pokecollect-preview.webp) lightgray 50%/cover no-repeat;
+}
+@supports not (background-image: url(../assets/images/project-images/pokecollect-preview.webp)) {
+  #pokecollect-project .project-image-holder {
+    background-image: url(../assets/images/project-images/pokecollect-preview.png);
+  }
+}
+
 .project-content {
   padding: 1.5rem;
 }
